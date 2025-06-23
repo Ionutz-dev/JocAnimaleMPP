@@ -1,0 +1,103 @@
+08:42:15.533 [main] INFO  StartHibernateRpcServer - Starting Hibernate RPC Server
+08:42:15.554 [main] INFO  StartHibernateRpcServer - Server properties loaded
+08:42:15.556 [main] INFO  app.persistence.hibernate.MatchRepositoryHibernate - Initializing Hibernate Match Repository
+08:42:15.569 [main] INFO  app.persistence.hibernate.HibernateUtils - Initializing Hibernate SessionFactory
+08:42:15.709 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+08:42:15.757 [main] INFO  app.persistence.hibernate.HibernateUtils - Building Hibernate SessionFactory
+08:42:15.804 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+08:42:15.961 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+08:42:15.967 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+08:42:15.967 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:E:/UBB/Year-2/Sem-2/MPP/Labs/JavaApp/identifier.sqlite]
+08:42:15.967 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=, password=****}
+08:42:15.968 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+08:42:15.971 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+08:42:17.455 [main] DEBUG app.model.hibernate.HibernateTicket - Creating empty HibernateTicket instance
+08:42:17.466 [main] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:17.467 [main] DEBUG app.model.hibernate.HibernateUser - Creating empty HibernateUser instance
+08:42:17.641 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+08:42:17.673 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@640cc04b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+08:42:17.686 [main] INFO  app.persistence.hibernate.TicketRepositoryHibernate - Initializing Hibernate Ticket Repository
+08:42:17.687 [main] INFO  app.persistence.hibernate.UserRepositoryHibernate - Initializing Hibernate User Repository
+08:42:17.689 [main] INFO  app.server.BasketballServicesImpl - Initializing BasketballServicesImpl
+08:42:17.694 [main] INFO  StartHibernateRpcServer - Using port from properties: 55556
+08:42:17.695 [main] INFO  StartHibernateRpcServer - Starting RPC Server with Hibernate persistence on port 55556
+08:42:17.697 [main] INFO  app.network.utils.AbsConcurrentServer - Concurrent AbstractServer created on port 55556
+08:42:17.697 [main] INFO  app.network.utils.BasketballRpcConcurrentServer - BasketballRpcConcurrentServer initialized on port 55556
+08:42:17.698 [main] INFO  app.network.utils.AbstractServer - Starting AbstractServer on port 55556
+08:42:17.698 [main] INFO  app.network.utils.AbstractServer - Server socket created and listening on port 55556
+08:42:41.183 [main] INFO  app.network.utils.AbstractServer - Client connected from /127.0.0.1
+08:42:41.185 [main] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Creating worker for client: /127.0.0.1:61997
+08:42:41.186 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Worker thread started
+08:42:41.216 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Processing LOGIN request
+08:42:41.217 [Thread-1] INFO  app.server.BasketballServicesImpl - Login request: username=admin
+08:42:41.755 [Thread-1] DEBUG app.model.hibernate.HibernateUser - Creating empty HibernateUser instance
+08:42:41.765 [Thread-1] DEBUG app.model.hibernate.HibernateUser - Converting HibernateUser to User: id=1
+08:42:41.766 [Thread-1] DEBUG app.model.User - Creating User instance: id=1, username=admin
+08:42:41.766 [Thread-1] INFO  app.persistence.hibernate.UserRepositoryHibernate - Found user with username=admin, id=1
+08:42:41.766 [Thread-1] INFO  app.server.BasketballServicesImpl - Login successful: username=admin, id=1, total logged clients: 1
+08:42:41.766 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Login successful: username=admin, id=1
+08:42:41.782 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Processing GET_AVAILABLE_MATCHES request
+08:42:41.782 [Thread-1] INFO  app.server.BasketballServicesImpl - Getting available matches
+08:42:41.811 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:41.815 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:41.815 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:41.817 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Converting HibernateMatch to Match: id=3
+08:42:41.818 [Thread-1] DEBUG app.model.Match - Creating Match instance: id=3, teamA=Manchester United, teamB=Chelsea, price=50.0, seats=40
+08:42:41.818 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Converting HibernateMatch to Match: id=1
+08:42:41.818 [Thread-1] DEBUG app.model.Match - Creating Match instance: id=1, teamA=Real Madrid, teamB=Barcelona, price=100.0, seats=39
+08:42:41.818 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Converting HibernateMatch to Match: id=2
+08:42:41.818 [Thread-1] DEBUG app.model.Match - Creating Match instance: id=2, teamA=Bayern Munich, teamB=Borussia Dortmund, price=75.0, seats=18
+08:42:41.818 [Thread-1] INFO  app.persistence.hibernate.MatchRepositoryHibernate - Found 3 available matches
+08:42:41.819 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Found 3 available matches
+08:42:56.060 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Processing SELL_TICKET request
+08:42:56.061 [Thread-1] DEBUG app.model.Ticket - Creating Ticket instance: id=0, matchId=2, userId=1, customer=Lucian, seats=2
+08:42:56.062 [Thread-1] INFO  app.server.BasketballServicesImpl - Selling ticket: matchId=2, userId=1, customer=Lucian, seats=2
+08:42:56.079 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:56.079 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Converting HibernateMatch to Match: id=2
+08:42:56.080 [Thread-1] DEBUG app.model.Match - Creating Match instance: id=2, teamA=Bayern Munich, teamB=Borussia Dortmund, price=75.0, seats=18
+08:42:56.085 [Thread-1] INFO  app.persistence.hibernate.MatchRepositoryHibernate - Found match with id=2: Match{id=2, teamA='Bayern Munich', teamB='Borussia Dortmund', ticketPrice=75.0, availableSeats=18}
+08:42:56.085 [Thread-1] DEBUG app.model.Ticket - Creating Ticket instance: id=0, matchId=2, userId=1, customer=Lucian, seats=2
+08:42:56.088 [Thread-1] DEBUG app.model.hibernate.HibernateTicket - Creating HibernateTicket from Ticket: id=0, matchId=2, userId=1, seats=2
+08:42:56.120 [Thread-1] INFO  app.persistence.hibernate.TicketRepositoryHibernate - Ticket saved successfully with id: 59
+08:42:56.121 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:56.121 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Setting HibernateMatch availableSeats from 18 to 16
+08:42:56.137 [Thread-1] INFO  app.persistence.hibernate.MatchRepositoryHibernate - Successfully updated seats for match id=2
+08:42:56.138 [Thread-1] INFO  app.server.BasketballServicesImpl - Ticket sold successfully: matchId=2, seats=2
+08:42:56.138 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Ticket sold successfully
+08:42:56.138 [pool-2-thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Sending ticket sold update to client
+08:42:56.141 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Processing GET_AVAILABLE_MATCHES request
+08:42:56.141 [Thread-1] INFO  app.server.BasketballServicesImpl - Getting available matches
+08:42:56.143 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:56.144 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:56.144 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:56.144 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Converting HibernateMatch to Match: id=3
+08:42:56.144 [Thread-1] DEBUG app.model.Match - Creating Match instance: id=3, teamA=Manchester United, teamB=Chelsea, price=50.0, seats=40
+08:42:56.144 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Converting HibernateMatch to Match: id=1
+08:42:56.145 [Thread-1] DEBUG app.model.Match - Creating Match instance: id=1, teamA=Real Madrid, teamB=Barcelona, price=100.0, seats=39
+08:42:56.145 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Converting HibernateMatch to Match: id=2
+08:42:56.145 [Thread-1] DEBUG app.model.Match - Creating Match instance: id=2, teamA=Bayern Munich, teamB=Borussia Dortmund, price=75.0, seats=16
+08:42:56.145 [Thread-1] INFO  app.persistence.hibernate.MatchRepositoryHibernate - Found 3 available matches
+08:42:56.145 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Found 3 available matches
+08:42:56.145 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Processing GET_AVAILABLE_MATCHES request
+08:42:56.146 [Thread-1] INFO  app.server.BasketballServicesImpl - Getting available matches
+08:42:56.147 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:56.148 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:56.148 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Creating empty HibernateMatch instance
+08:42:56.148 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Converting HibernateMatch to Match: id=3
+08:42:56.148 [Thread-1] DEBUG app.model.Match - Creating Match instance: id=3, teamA=Manchester United, teamB=Chelsea, price=50.0, seats=40
+08:42:56.148 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Converting HibernateMatch to Match: id=1
+08:42:56.148 [Thread-1] DEBUG app.model.Match - Creating Match instance: id=1, teamA=Real Madrid, teamB=Barcelona, price=100.0, seats=39
+08:42:56.149 [Thread-1] DEBUG app.model.hibernate.HibernateMatch - Converting HibernateMatch to Match: id=2
+08:42:56.149 [Thread-1] DEBUG app.model.Match - Creating Match instance: id=2, teamA=Bayern Munich, teamB=Borussia Dortmund, price=75.0, seats=16
+08:42:56.149 [Thread-1] INFO  app.persistence.hibernate.MatchRepositoryHibernate - Found 3 available matches
+08:42:56.149 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Found 3 available matches
+08:42:59.234 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Processing LOGOUT request
+08:42:59.234 [Thread-1] DEBUG app.model.User - Creating User instance: id=1, username=admin
+08:42:59.234 [Thread-1] INFO  app.server.BasketballServicesImpl - Logout: username=admin, id=1
+08:42:59.235 [Thread-1] INFO  app.server.BasketballServicesImpl - User successfully logged out: username=admin, id=1, remaining clients: 0
+08:42:59.235 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Logout successful
+08:42:59.235 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Worker thread ending
+08:42:59.236 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Cleaning up worker resources
+08:42:59.236 [Thread-1] INFO  app.server.BasketballServicesImpl - Logout: username=admin, id=1
+08:42:59.237 [Thread-1] WARN  app.server.BasketballServicesImpl - User not found in logged clients: username=admin, id=1
+08:42:59.239 [Thread-1] INFO  app.network.rpcprotocol.BasketballClientRpcReflectionWorker - Cleanup complete

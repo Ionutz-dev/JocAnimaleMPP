@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <RollingFile name="RollingFile" fileName="logs/client.log"
+                     filePattern="logs/client-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console" level="info"/>
+            <AppenderRef ref="RollingFile" level="debug"/>
+        </Root>
+        <Logger name="app.client" level="debug" additivity="false">
+            <AppenderRef ref="Console" level="info"/>
+            <AppenderRef ref="RollingFile" level="debug"/>
+        </Logger>
+        <!-- Reduce JavaFX internal logging -->
+        <Logger name="javafx" level="warn" additivity="false">
+            <AppenderRef ref="Console" level="warn"/>
+            <AppenderRef ref="RollingFile" level="warn"/>
+        </Logger>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,89 @@
+2025-06-23 18:40:20.093 [main] INFO  app.server.ServerApplication - Starting ServerApplication using Java 23 with PID 27276 (E:\UBB\Year-2\Sem-2\MPP\Exam\JocAnimaleMPP\JocAnimaleMPP\Server\out\production\classes started by Ionut in E:\UBB\Year-2\Sem-2\MPP\Exam\JocAnimaleMPP\JocAnimaleMPP)
+2025-06-23 18:40:20.095 [main] INFO  app.server.ServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-23 18:40:21.660 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-23 18:40:21.664 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-06-23 18:40:21.669 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-06-23 18:40:21.676 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-23 18:40:21.678 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-23 18:40:21.678 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-23 18:40:21.743 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-23 18:40:21.743 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1555 ms
+2025-06-23 18:40:22.433 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-23 18:40:22.480 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-23 18:40:22.499 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-06-23 18:40:22.510 [main] INFO  app.server.ServerApplication - Started ServerApplication in 3.172 seconds (process running for 4.04)
+2025-06-23 18:40:22.884 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-23 18:40:22.885 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-23 18:40:22.886 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-23 18:40:23.237 [http-nio-8080-exec-3] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 18:40:23.281 [http-nio-8080-exec-3] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-06-23 18:40:23.554 [http-nio-8080-exec-3] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 18:40:23.686 [http-nio-8080-exec-3] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 18:40:23.690 [http-nio-8080-exec-3] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 18:40:23.690 [http-nio-8080-exec-3] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:JocAnimaleMPP.db]
+2025-06-23 18:40:23.690 [http-nio-8080-exec-3] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 18:40:23.690 [http-nio-8080-exec-3] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 18:40:23.692 [http-nio-8080-exec-3] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 18:40:25.346 [http-nio-8080-exec-3] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 18:40:25.377 [http-nio-8080-exec-3] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@44909499] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 18:40:51.602 [http-nio-8080-exec-4] INFO  app.services.GameService - New game started for player: test with config: 3
+2025-06-23 18:44:45.065 [main] INFO  app.server.ServerApplication - Starting ServerApplication using Java 23 with PID 16020 (E:\UBB\Year-2\Sem-2\MPP\Exam\JocAnimaleMPP\JocAnimaleMPP\Server\out\production\classes started by Ionut in E:\UBB\Year-2\Sem-2\MPP\Exam\JocAnimaleMPP\JocAnimaleMPP)
+2025-06-23 18:44:45.067 [main] INFO  app.server.ServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-23 18:44:46.595 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-23 18:44:46.599 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-06-23 18:44:46.603 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-06-23 18:44:46.610 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-23 18:44:46.611 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-23 18:44:46.613 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-23 18:44:46.673 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-23 18:44:46.673 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1531 ms
+2025-06-23 18:44:47.332 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-23 18:44:47.383 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-23 18:44:47.403 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-06-23 18:44:47.414 [main] INFO  app.server.ServerApplication - Started ServerApplication in 3.098 seconds (process running for 3.887)
+2025-06-23 18:44:47.637 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-23 18:44:47.637 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-23 18:44:47.638 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-23 18:44:48.000 [http-nio-8080-exec-2] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 18:44:48.160 [http-nio-8080-exec-2] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-06-23 18:44:48.489 [http-nio-8080-exec-2] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 18:44:48.634 [http-nio-8080-exec-2] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 18:44:48.638 [http-nio-8080-exec-2] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 18:44:48.639 [http-nio-8080-exec-2] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:JocAnimaleMPP.db]
+2025-06-23 18:44:48.639 [http-nio-8080-exec-2] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 18:44:48.639 [http-nio-8080-exec-2] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 18:44:48.642 [http-nio-8080-exec-2] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 18:44:50.605 [http-nio-8080-exec-2] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 18:44:50.639 [http-nio-8080-exec-2] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@70a9ba67] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 18:45:01.584 [main] INFO  app.server.ServerApplication - Starting ServerApplication using Java 23 with PID 29772 (E:\UBB\Year-2\Sem-2\MPP\Exam\JocAnimaleMPP\JocAnimaleMPP\Server\out\production\classes started by Ionut in E:\UBB\Year-2\Sem-2\MPP\Exam\JocAnimaleMPP\JocAnimaleMPP)
+2025-06-23 18:45:01.586 [main] INFO  app.server.ServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-23 18:45:03.077 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-23 18:45:03.080 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-06-23 18:45:03.085 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-06-23 18:45:03.091 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-23 18:45:03.093 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-23 18:45:03.093 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-23 18:45:03.153 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-23 18:45:03.154 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1491 ms
+2025-06-23 18:45:03.781 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-23 18:45:03.838 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-23 18:45:03.856 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-06-23 18:45:03.866 [main] INFO  app.server.ServerApplication - Started ServerApplication in 2.982 seconds (process running for 3.859)
+2025-06-23 18:45:03.978 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-23 18:45:03.978 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-23 18:45:03.980 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-23 18:45:04.123 [http-nio-8080-exec-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 18:45:04.167 [http-nio-8080-exec-1] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-06-23 18:45:04.863 [http-nio-8080-exec-1] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 18:45:05.015 [http-nio-8080-exec-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 18:45:05.019 [http-nio-8080-exec-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 18:45:05.019 [http-nio-8080-exec-1] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:JocAnimaleMPP.db]
+2025-06-23 18:45:05.019 [http-nio-8080-exec-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 18:45:05.019 [http-nio-8080-exec-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 18:45:05.023 [http-nio-8080-exec-1] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 18:45:06.631 [http-nio-8080-exec-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 18:45:06.662 [http-nio-8080-exec-1] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ce748c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 18:45:22.687 [http-nio-8080-exec-9] INFO  app.services.GameService - New game started for player: test with config: 1
+2025-06-23 18:45:23.412 [http-nio-8080-exec-1] INFO  app.services.GameService - Guess: sessionId=20, guess=(1,1), result=E
+2025-06-23 18:45:23.723 [http-nio-8080-exec-2] INFO  app.services.GameService - Guess: sessionId=20, guess=(2,1), result=NE
+2025-06-23 18:45:24.862 [http-nio-8080-exec-4] INFO  app.services.GameService - Guess: sessionId=20, guess=(1,2), result=HIT
